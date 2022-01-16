@@ -1,0 +1,217 @@
+# does not include admiral because the game handles that by default
+# this = leader
+add_leader_trait_clone_army = {
+	if = {
+		limit = { species = { has_trait = trait_clone_soldier_infertile } }
+		if = {
+			limit = {
+				leader_class = governor
+				NOT = { has_trait = leader_trait_clone_army_governor }
+			}
+			add_trait = leader_trait_clone_army_governor
+		}
+		else_if = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = leader_trait_clone_army_scientist }
+			}
+			add_trait = leader_trait_clone_army_scientist
+		}
+		else_if = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_clone_army_general }
+			}
+			add_trait = leader_trait_clone_army_general
+		}
+		else_if = {
+			limit = {
+				leader_class = ruler
+				NOT = { has_trait = leader_trait_clone_army_ruler }
+			}
+			add_trait = leader_trait_clone_army_ruler
+		}
+		if = {
+			limit = { NOT = { has_ruler_trait = leader_trait_clone_army_ruler } }
+			add_ruler_trait = leader_trait_clone_army_ruler
+		}
+	}
+}
+
+# does not include admiral because the game handles that by default
+# this = leader
+add_leader_trait_clone_army_full = {
+	if = {
+		limit = { species = { has_trait = trait_clone_soldier_infertile_full_potential } }
+		if = {
+			limit = {
+				leader_class = governor
+				NOT = { has_trait = leader_trait_clone_army_full_governor }
+			}
+			add_trait = leader_trait_clone_army_full_governor
+		}
+		else_if = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = leader_trait_clone_army_full_scientist }
+			}
+			add_trait = leader_trait_clone_army_full_scientist
+		}
+		else_if = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_clone_army_full_general }
+			}
+			add_trait = leader_trait_clone_army_full_general
+		}
+		else_if = {
+			limit = {
+				leader_class = ruler
+				NOT = { has_trait = leader_trait_clone_army_full_ruler }
+			}
+			add_trait = leader_trait_clone_army_full_ruler
+		}
+		if = {
+			limit = { NOT = { has_ruler_trait = leader_trait_clone_army_full_ruler } }
+			add_ruler_trait = leader_trait_clone_army_full_ruler
+		}
+	}
+}
+
+# does not include admiral because the game handles that by default
+# this = leader
+add_leader_trait_clone_army_fertile = {
+	if = {
+		limit = { species = { has_trait = trait_clone_soldier_fertile } }
+		if = {
+			limit = {
+				leader_class = governor
+				NOT = { has_trait = leader_trait_clone_army_fertile_governor }
+			}
+			add_trait = leader_trait_clone_army_fertile_governor
+		}
+		else_if = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = leader_trait_clone_army_fertile_scientist }
+			}
+			add_trait = leader_trait_clone_army_fertile_scientist
+		}
+		else_if = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_clone_army_fertile_general }
+			}
+			add_trait = leader_trait_clone_army_fertile_general
+		}
+		else_if = {
+			limit = {
+				leader_class = ruler
+				NOT = { has_trait = leader_trait_clone_army_fertile_ruler }
+			}
+			add_trait = leader_trait_clone_army_fertile_ruler
+		}
+		if = {
+			limit = { NOT = { has_ruler_trait = leader_trait_clone_army_fertile_ruler } }
+			add_ruler_trait = leader_trait_clone_army_fertile_ruler
+		}
+	}
+}
+
+# does not include admiral because the game handles that by default
+# this = leader
+remove_leader_trait_clone_army = {
+	if = {
+		limit = { NOT = { species = { has_trait = trait_clone_soldier_infertile } } }
+		if = {
+			limit = { has_trait = leader_trait_clone_army_governor }
+			remove_trait = leader_trait_clone_army_governor
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_scientist }
+			remove_trait = leader_trait_clone_army_scientist
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_general }
+			remove_trait = leader_trait_clone_army_general
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_ruler }
+			remove_trait = leader_trait_clone_army_ruler
+		}
+		if = {
+			limit = { has_ruler_trait = leader_trait_clone_army_ruler }
+			remove_ruler_trait = leader_trait_clone_army_ruler
+		}
+	}
+}
+
+# does not include admiral because the game handles that by default
+# this = leader
+remove_leader_trait_clone_army_full = {
+	if = {
+		limit = { NOT = { species = { has_trait = trait_clone_soldier_infertile_full_potential } } }
+		if = {
+			limit = { has_trait = leader_trait_clone_army_full_governor }
+			remove_trait = leader_trait_clone_army_full_governor
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_full_scientist }
+			remove_trait = leader_trait_clone_army_full_scientist
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_full_general }
+			remove_trait = leader_trait_clone_army_full_general
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_full_ruler }
+			remove_trait = leader_trait_clone_army_full_ruler
+		}
+		if = {
+			limit = { has_ruler_trait = leader_trait_clone_army_full_ruler }
+			remove_ruler_trait = leader_trait_clone_army_full_ruler
+		}
+	}
+}
+
+# does not include admiral because the game handles that by default
+# this = leader
+remove_leader_trait_clone_army_fertile = {
+	if = {
+		limit = { NOT = { species = { has_trait = trait_clone_soldier_fertile } } }
+		if = {
+			limit = { has_trait = leader_trait_clone_army_fertile_governor }
+			remove_trait = leader_trait_clone_army_fertile_governor
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_fertile_scientist }
+			remove_trait = leader_trait_clone_army_fertile_scientist
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_fertile_general }
+			remove_trait = leader_trait_clone_army_fertile_general
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_fertile_ruler }
+			remove_trait = leader_trait_clone_army_fertile_ruler
+		}
+		if = {
+			limit = { has_ruler_trait = leader_trait_clone_army_fertile_ruler }
+			remove_ruler_trait = leader_trait_clone_army_fertile_ruler
+		}
+	}
+}
+
+# this = leader
+add_all_applicable_more_clone_soldier_traits = {
+	add_leader_trait_clone_army = yes
+	add_leader_trait_clone_army_full = yes
+	add_leader_trait_clone_army_fertile = yes
+}
+
+# this = leader
+remove_all_inapplicable_more_clone_soldier_traits = {
+	remove_leader_trait_clone_army = yes
+	remove_leader_trait_clone_army_full = yes
+	remove_leader_trait_clone_army_fertile = yes
+}

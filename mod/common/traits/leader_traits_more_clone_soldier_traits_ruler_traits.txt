@@ -1,0 +1,47 @@
+leader_trait_clone_army_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
+	modifier = {
+		army_morale = 0.1
+		country_ship_upgrade_cost_mult = -0.1
+		country_naval_cap_mult = 0.1
+		ship_speed_mult = 0.1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_clone_army_fertile_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
+	modifier = {
+		army_morale = 0.05
+		country_ship_upgrade_cost_mult = -0.05
+		country_naval_cap_mult = 0.05
+		ship_speed_mult = 0.05
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_clone_army_full_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_ascendant.dds"
+	modifier = {
+		army_morale = 0.2
+		country_ship_upgrade_cost_mult = -0.2
+		country_naval_cap_mult = 0.2
+		ship_speed_mult = 0.2
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}

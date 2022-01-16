@@ -1,0 +1,44 @@
+leader_trait_clone_army_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
+	modifier = {
+		army_morale = 0.1
+		army_disengage_chance_mult = 0.2
+		army_experience_gain_mult = 0.2
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+leader_trait_clone_army_fertile_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
+	modifier = {
+		army_morale = 0.05
+		army_disengage_chance_mult = 0.1
+		army_experience_gain_mult = 0.1
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+leader_trait_clone_army_full_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_ascendant.dds"
+	modifier = {
+		army_morale = 0.2
+		army_disengage_chance_mult = 0.4
+		army_experience_gain_mult = 0.4
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
