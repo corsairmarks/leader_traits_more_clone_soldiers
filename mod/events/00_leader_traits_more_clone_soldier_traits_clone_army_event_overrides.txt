@@ -1,5 +1,6 @@
 namespace = clones
 
+# Modified: Invokes leader_traits_more_clone_soldier_traits.8 to adjust clone traits
 # Clone Fertility reclaimed
 country_event = {
 	id = clones.22
@@ -102,6 +103,7 @@ country_event = {
 	}
 }
 
+# Modified: Invokes leader_traits_more_clone_soldier_traits.8 to adjust clone traits
 # Clone Potential
 country_event = {
 	id = clones.23
@@ -157,4 +159,13 @@ country_event = {
 		}
 		set_country_flag = clone_army_full_potential
 	}
+}
+
+# Modified: Replaced by unified events/effects
+# Admiral trait added
+country_event = {
+	id = clones.24
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { }
 }

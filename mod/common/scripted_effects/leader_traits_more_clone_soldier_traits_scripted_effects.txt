@@ -19,6 +19,13 @@ add_leader_trait_clone_army = {
 		}
 		else_if = {
 			limit = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_clone_army_admiral }
+			}
+			add_trait = leader_trait_clone_army_admiral
+		}
+		else_if = {
+			limit = {
 				leader_class = general
 				NOT = { has_trait = leader_trait_clone_army_general }
 			}
@@ -56,6 +63,13 @@ add_leader_trait_clone_army_full = {
 				NOT = { has_trait = leader_trait_clone_army_full_scientist }
 			}
 			add_trait = leader_trait_clone_army_full_scientist
+		}
+		else_if = {
+			limit = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_clone_army_full_admiral}
+			}
+			add_trait = leader_trait_clone_army_full_admiral
 		}
 		else_if = {
 			limit = {
@@ -99,6 +113,13 @@ add_leader_trait_clone_army_fertile = {
 		}
 		else_if = {
 			limit = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_clone_army_fertile_admiral }
+			}
+			add_trait = leader_trait_clone_army_fertile_admiral
+		}
+		else_if = {
+			limit = {
 				leader_class = general
 				NOT = { has_trait = leader_trait_clone_army_fertile_general }
 			}
@@ -132,6 +153,10 @@ remove_leader_trait_clone_army = {
 			remove_trait = leader_trait_clone_army_scientist
 		}
 		if = {
+			limit = { has_trait = leader_trait_clone_army_admiral }
+			remove_trait = leader_trait_clone_army_admiral
+		}
+		if = {
 			limit = { has_trait = leader_trait_clone_army_general }
 			remove_trait = leader_trait_clone_army_general
 		}
@@ -160,6 +185,10 @@ remove_leader_trait_clone_army_full = {
 			remove_trait = leader_trait_clone_army_full_scientist
 		}
 		if = {
+			limit = { has_trait = leader_trait_clone_army_full_admiral }
+			remove_trait = leader_trait_clone_army_full_admiral
+		}
+		if = {
 			limit = { has_trait = leader_trait_clone_army_full_general }
 			remove_trait = leader_trait_clone_army_full_general
 		}
@@ -186,6 +215,10 @@ remove_leader_trait_clone_army_fertile = {
 		if = {
 			limit = { has_trait = leader_trait_clone_army_fertile_scientist }
 			remove_trait = leader_trait_clone_army_fertile_scientist
+		}
+		if = {
+			limit = { has_trait = leader_trait_clone_army_fertile_admiral }
+			remove_trait = leader_trait_clone_army_fertile_admiral
 		}
 		if = {
 			limit = { has_trait = leader_trait_clone_army_fertile_general }
