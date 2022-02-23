@@ -1,6 +1,5 @@
 leader_trait_clone_army_governor = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
 	modifier = {
 		armies_cost_mult = -0.2
@@ -17,7 +16,6 @@ leader_trait_clone_army_governor = {
 
 leader_trait_clone_army_fertile_governor = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
 	modifier = {
 		armies_cost_mult = -0.1
@@ -34,7 +32,6 @@ leader_trait_clone_army_fertile_governor = {
 
 leader_trait_clone_army_full_governor = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_ascendant.dds"
 	modifier = {
 		armies_cost_mult = -0.4

@@ -1,6 +1,5 @@
 leader_trait_clone_army_general = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
 	modifier = {
 		army_morale = 0.1
@@ -15,7 +14,6 @@ leader_trait_clone_army_general = {
 
 leader_trait_clone_army_fertile_general = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
 	modifier = {
 		army_morale = 0.05
@@ -30,7 +28,6 @@ leader_trait_clone_army_fertile_general = {
 
 leader_trait_clone_army_full_general = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_ascendant.dds"
 	modifier = {
 		army_morale = 0.2
