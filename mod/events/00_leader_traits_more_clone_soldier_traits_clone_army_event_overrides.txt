@@ -1,0 +1,160 @@
+namespace = clones
+
+# Clone Fertility reclaimed
+country_event = {
+	id = clones.22
+	title = clones.22.name
+	desc = clones.22.desc
+	picture = GFX_evt_news_room
+	is_triggered_only = yes
+
+	option = {
+		name = ASTOUNDING
+		add_resource = {
+			alloys = 2000
+			nanites = 100
+			rare_crystals = 100
+		}
+		hidden_effect = {
+			modify_species = {
+				remove_trait = trait_clone_soldier_infertile
+				add_trait = trait_clone_soldier_fertile
+				add_traits_at_start_of_list = yes
+				effect = {
+					root = {
+						# Use the Saved leader to restore Portraits (then kill them off).
+						activate_saved_leader = {
+							key = "clone_army_main_species_generic_portrait"
+							add_to_owned = yes
+							effect = {
+								save_event_target_as = clone_army_main_species_generic_portrait
+							}
+						}
+
+						change_dominant_species = {
+							species = prev
+						}
+					}
+
+					change_species_characteristics = {
+						portrait = event_target:clone_army_main_species_generic_portrait
+						gender = any
+						can_be_modified = yes
+					}
+				}
+			}
+			owner_main_species = {
+				every_galaxy_species = {
+					limit = {
+						is_same_species = prev
+						NOT = { is_same_value = prev }
+						has_trait = trait_clone_soldier_infertile
+						NOR = {
+							any_country = {
+								NOT = { is_same_value = root }
+								owner_main_species = {
+									is_same_value = prevprev
+								}
+							}
+							any_species_pop = {
+								NOT = { is_owned_by = root }
+							}
+						}
+					}
+					change_species_characteristics = {
+						remove_trait = trait_clone_soldier_infertile
+						add_trait = trait_clone_soldier_fertile
+						add_traits_at_start_of_list = yes
+					}
+				}
+			}
+
+			event_target:clone_army_main_species_generic_portrait = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+
+			set_country_flag = clone_army_fertility_unlocked
+
+			every_owned_planet = {
+				limit = { has_modifier = modifier_clone_pops_decline }
+				remove_modifier = modifier_clone_pops_decline
+			}
+
+			# replace admiral-only loops with the "adjust all clone leaders" event
+			country_event = {
+				id = leader_traits_more_clone_soldier_traits.8
+			}
+
+			# Dismantle all Ancient Clone Vats
+			every_owned_planet = {
+				limit = { is_colony = yes }
+				if = {
+					limit = { has_building = building_clone_army_clone_vat }
+					while = {
+						limit = { has_building = building_clone_army_clone_vat }
+						remove_building = building_clone_army_clone_vat
+					}
+				}
+			}
+		}
+	}
+}
+
+# Clone Potential
+country_event = {
+	id = clones.23
+	title = clones.23.name
+	desc = clones.23.desc
+	picture = GFX_evt_clones
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+		hidden_effect = {
+			modify_species = {
+				remove_trait = trait_clone_soldier_infertile
+				add_trait = trait_clone_soldier_infertile_full_potential
+				add_traits_at_start_of_list = yes
+				effect = {
+					root = {
+						change_dominant_species = {
+							species = prev
+						}
+					}
+				}
+			}
+			owner_main_species = {
+				every_galaxy_species = {
+					limit = {
+						is_same_species = prev
+						NOT = { is_same_value = prev }
+						has_trait = trait_clone_soldier_infertile
+						NOR = {
+							any_country = {
+								NOT = { is_same_value = root }
+								owner_main_species = {
+									is_same_value = prevprev
+								}
+							}
+							any_species_pop = {
+								NOT = { is_owned_by = root }
+							}
+						}
+					}
+					change_species_characteristics = {
+						remove_trait = trait_clone_soldier_infertile
+						add_trait = trait_clone_soldier_infertile_full_potential
+						add_traits_at_start_of_list = yes
+					}
+				}
+			}
+			# replace admiral-only loops with the "adjust all clone leaders" event
+			country_event = {
+				id = leader_traits_more_clone_soldier_traits.8
+			}
+		}
+		set_country_flag = clone_army_full_potential
+	}
+}

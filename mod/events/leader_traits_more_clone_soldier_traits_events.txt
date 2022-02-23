@@ -101,7 +101,7 @@ event = {
 }
 
 # adjust all owned/pool leaders
-# triggered by on_game_start_country and leader_species_traits.6
+# triggered by on_game_start_country and both clone army project finisher events (clones.22, clones.23)
 country_event = {
 	id = leader_traits_more_clone_soldier_traits.8
 	hide_window = yes
