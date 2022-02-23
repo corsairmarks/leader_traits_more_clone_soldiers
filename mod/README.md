@@ -1,14 +1,30 @@
 # Overview
 
-Summary
+Have you ever wondered what other Clone Army leaders might be able to do, when not leading a fleet?  Or maybe wondered why their (thematically-appropriate) generals don't have any special bonuses?  Well wonder no more!  With this mod, your Origin: Clone Army empires will have a full suite of special traits, including your rules.  As you might expect, these bonuses are largely related to naval and army bonuses.
 
 # Changes
 
-Notes
+Adds twelve new traits for leaders from Clone Soldier species, one for each non-Admiral leader class for regular, Ascendant, and Descendant clone soldiers.  These traits follow roughly the same scaling as the built-in Clone Army Admiral traits: the Ascendant trait is about twice as powerful, while the Descendant trait is about half as powerful.  In order to ensure all Clone Soldier leaders have their traits applied when completing one of the mutually-exclusive Clone Army special project choices, this mode needs to preempts three events related to adjusting Clone Soldier leader traits.
 
 ## Compatibility
 
-Notes
+Preempts three of the built-in Origin: Clone Army events: `clones.22`, `clones.23`, and `clones.24`.  These events need to be replaced so that Clone Soldier traits can be up-/down-graded when completing the relevant special projects, therefor this mod will not work with other mods that also replace these events.
+
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+
+### Not Included in "Subtle Polish"
+
+This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089) because it is a considerable buff to leaders for empires with Origin: Clone Army.  It it otherwise fully compatible.
+
+## Known Issues
+
+Preempting an event causes the game to log an error, so expect to see three error.log entries similar to these:
+
+```
+[00:15:19][eventmanager.cpp:361]: an event with id [clones.22] already exists!  file: events/clone_army_events.txt line: 441
+[00:15:19][eventmanager.cpp:361]: an event with id [clones.23] already exists!  file: events/clone_army_events.txt line: 555
+[00:15:19][eventmanager.cpp:361]: an event with id [clones.24] already exists!  file: events/clone_army_events.txt line: 622
+```
 
 ## Changelog
 
@@ -16,7 +32,7 @@ Notes
 
 ## Source Code
 
-Hosted on [GitHub]()
+Hosted on [GitHub](https://github.com/corsairmarks/leader_traits_more_clone_soldiers)
 
 ### Development Notes
 
