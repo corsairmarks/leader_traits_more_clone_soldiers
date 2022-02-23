@@ -1,7 +1,4 @@
-name="Leader Traits: More Clone Soldier Traits"
-dependencies={
-	"Leader Traits: All Eligible Species Traits"
-}
+name="Leader Traits: Clone Army - All Leader Classes"
 tags={
 	"Events"
 	"Gameplay"
