@@ -19,7 +19,6 @@ Preempting an event causes the game to log an error, so expect to see three erro
 [00:15:19][eventmanager.cpp:361]: an event with id [clones.23] already exists!  file: events/clone_army_events.txt line: 555
 [00:15:19][eventmanager.cpp:361]: an event with id [clones.24] already exists!  file: events/clone_army_events.txt line: 622
 [/code]
-
 [h2]Changelog[/h2]
 See [url=]Change Notes[/url]
 
