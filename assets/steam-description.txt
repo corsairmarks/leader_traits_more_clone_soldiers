@@ -10,7 +10,7 @@ Preempts three of the built-in Origin: Clone Army events: [b]clones.22[/b], [b]c
 Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
 
 [h3]Not Included in "Subtle Polish"[/h3]
-This mod is intentionally not included in my modpack [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it is a considerable buff to leaders for empires with Origin: Clone Army.  It it otherwise fully compatible.
+This mod is intentionally not included in my modpack [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it is a considerable buff to leaders for empires with Origin: Clone Army.  It is otherwise fully compatible.
 
 [h2]Known Issues[/h2]
 Preempting an event causes the game to log an error, so expect to see three error.log entries similar to these:

@@ -14,7 +14,7 @@ Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
 
 ### Not Included in "Subtle Polish"
 
-This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089) because it is a considerable buff to leaders for empires with Origin: Clone Army.  It it otherwise fully compatible.
+This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089) because it is a considerable buff to leaders for empires with Origin: Clone Army.  It is otherwise fully compatible.
 
 ## Known Issues
 
