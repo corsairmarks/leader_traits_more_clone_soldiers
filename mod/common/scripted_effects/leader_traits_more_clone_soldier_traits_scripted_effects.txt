@@ -1,6 +1,7 @@
 # does not include admiral because the game handles that by default
 # this = leader
 add_leader_trait_clone_army = {
+	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_infertile } }
 		if = {
@@ -48,6 +49,7 @@ add_leader_trait_clone_army = {
 # does not include admiral because the game handles that by default
 # this = leader
 add_leader_trait_clone_army_full = {
+	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_infertile_full_potential } }
 		if = {
@@ -95,6 +97,7 @@ add_leader_trait_clone_army_full = {
 # does not include admiral because the game handles that by default
 # this = leader
 add_leader_trait_clone_army_fertile = {
+	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_fertile } }
 		if = {
@@ -142,6 +145,7 @@ add_leader_trait_clone_army_fertile = {
 # does not include admiral because the game handles that by default
 # this = leader
 remove_leader_trait_clone_army = {
+	optimize_memory
 	if = {
 		limit = { NOT = { species = { has_trait = trait_clone_soldier_infertile } } }
 		if = {
@@ -174,6 +178,7 @@ remove_leader_trait_clone_army = {
 # does not include admiral because the game handles that by default
 # this = leader
 remove_leader_trait_clone_army_full = {
+	optimize_memory
 	if = {
 		limit = { NOT = { species = { has_trait = trait_clone_soldier_infertile_full_potential } } }
 		if = {
@@ -206,6 +211,7 @@ remove_leader_trait_clone_army_full = {
 # does not include admiral because the game handles that by default
 # this = leader
 remove_leader_trait_clone_army_fertile = {
+	optimize_memory
 	if = {
 		limit = { NOT = { species = { has_trait = trait_clone_soldier_fertile } } }
 		if = {
@@ -237,6 +243,7 @@ remove_leader_trait_clone_army_fertile = {
 
 # this = leader
 add_all_applicable_more_clone_soldier_traits = {
+	optimize_memory
 	add_leader_trait_clone_army = yes
 	add_leader_trait_clone_army_full = yes
 	add_leader_trait_clone_army_fertile = yes
@@ -244,6 +251,7 @@ add_all_applicable_more_clone_soldier_traits = {
 
 # this = leader
 remove_all_inapplicable_more_clone_soldier_traits = {
+	optimize_memory
 	remove_leader_trait_clone_army = yes
 	remove_leader_trait_clone_army_full = yes
 	remove_leader_trait_clone_army_fertile = yes
