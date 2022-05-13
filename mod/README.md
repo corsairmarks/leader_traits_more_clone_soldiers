@@ -10,7 +10,7 @@ Adds twelve new traits for leaders from Clone Soldier species, one for each non-
 
 Preempts three of the built-in Origin: Clone Army events: `clones.22`, `clones.23`, and `clones.24`.  These events need to be replaced so that Clone Soldier traits can be up-/down-graded when completing the relevant special projects, therefor this mod will not work with other mods that also replace these events.
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
 
 ### Not Included in "Subtle Polish"
 
@@ -29,6 +29,7 @@ Preempting an event causes the game to log an error, so expect to see three erro
 ## Changelog
 
 * 1.0.0 Initial version
+* 2.0.0 Update for Stellaris version 3.4 "Cepheus" - use memory optimization feature for effects
 
 ## Source Code
 
