@@ -2,14 +2,14 @@
 # this = country
 on_game_start_country = {
 	events = {
-		leader_traits_more_clone_soldier_traits.8
+		more_clone_soldier_traits.8
 	}
 }
 
 # fired when loading a single-player game
 on_single_player_save_game_load = {
 	events = {
-		leader_traits_more_clone_soldier_traits.6
+		more_clone_soldier_traits.6
 	}
 }
 
@@ -18,7 +18,7 @@ on_single_player_save_game_load = {
 # from = leader
 on_leader_spawned = {
 	events = {
-		leader_traits_more_clone_soldier_traits.1
+		more_clone_soldier_traits.1
 	}
 }
 
@@ -28,7 +28,7 @@ on_leader_spawned = {
 # from = species (Post Modification)
 on_modification_complete = {
 	events = {
-		leader_traits_more_clone_soldier_traits.2
+		more_clone_soldier_traits.2
 	}
 }
 
@@ -37,7 +37,7 @@ on_modification_complete = {
 # from = previous Ruler, already has the new class
 on_ruler_back_to_pre_ruler_class = {
 	events = {
-		leader_traits_more_clone_soldier_traits.1
+		more_clone_soldier_traits.1
 	}
 }
 
@@ -47,7 +47,7 @@ on_ruler_back_to_pre_ruler_class = {
 # fromfromfrom = fleet 2
 on_fleet_destroyed_perp = {
 	events = {
-		leader_traits_more_clone_soldier_traits.4
+		more_clone_soldier_traits.4
 	}
 }
 
@@ -59,6 +59,6 @@ on_fleet_destroyed_perp = {
 # from = species, pre-modification (if known)
 on_leader_species_changed = {
 	events = {
-		leader_traits_more_clone_soldier_traits.5
+		more_clone_soldier_traits.5
 	}
 }

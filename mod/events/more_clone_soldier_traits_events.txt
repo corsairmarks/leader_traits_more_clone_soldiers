@@ -1,14 +1,14 @@
-namespace = leader_traits_more_clone_soldier_traits
+namespace = more_clone_soldier_traits
 
 # new leaders get every applicable species-specific leader trait
 country_event = {
-	id = leader_traits_more_clone_soldier_traits.1
+	id = more_clone_soldier_traits.1
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		from = {
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 	}
@@ -16,21 +16,21 @@ country_event = {
 
 # modifying a species applies all applicable traits and removes those no longer applicable
 country_event = {
-	id = leader_traits_more_clone_soldier_traits.2
+	id = more_clone_soldier_traits.2
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
 		every_owned_leader = {
 			limit = { species = { is_exact_same_species = from } }
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 
 		every_pool_leader = {
 			limit = { species = { is_exact_same_species = from } }
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 	}
@@ -39,7 +39,7 @@ country_event = {
 # follows the random event for a new random admiral (leader.1); triggered by on_fleet_destroyed_perp
 # should be harmless if executed against another admiral - assuming they had species-appropriate traits in the first place, no changes will be made
 country_event = {
-	id = leader_traits_more_clone_soldier_traits.4
+	id = more_clone_soldier_traits.4
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -51,7 +51,7 @@ country_event = {
 	immediate = {
 		last_created_leader = {
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 	}
@@ -60,7 +60,7 @@ country_event = {
 # manually triggered above - unified approach to adjusting species-based clone traits for leaders
 # also triggered by custom on_action on_leader_species_changed
 leader_event = {
-	id = leader_traits_more_clone_soldier_traits.5
+	id = more_clone_soldier_traits.5
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -71,7 +71,7 @@ leader_event = {
 
 # triggered by on_single_player_save_game_load
 event = {
-	id = leader_traits_more_clone_soldier_traits.6
+	id = more_clone_soldier_traits.6
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -80,7 +80,7 @@ event = {
 	immediate = {
 		every_country = {
 			country_event = {
-				id = leader_traits_more_clone_soldier_traits.8
+				id = more_clone_soldier_traits.8
 			}
 		}
 		set_global_flag = more_clone_soldier_traits_initial_config
@@ -90,19 +90,19 @@ event = {
 # adjust all owned/pool leaders
 # triggered by on_game_start_country and both clone army project finisher events (clones.22, clones.23)
 country_event = {
-	id = leader_traits_more_clone_soldier_traits.8
+	id = more_clone_soldier_traits.8
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		every_owned_leader = {
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 
 		every_pool_leader = {
 			leader_event = {
-				id = leader_traits_more_clone_soldier_traits.5
+				id = more_clone_soldier_traits.5
 			}
 		}
 	}
