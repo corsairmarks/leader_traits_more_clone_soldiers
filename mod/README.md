@@ -32,6 +32,7 @@ Preempting an event causes the game to log an error, so expect to see three erro
 * 2.0.0 Update for Stellaris version 3.4 "Cepheus" - use memory optimization feature for effects
 * 2.1.0 Mark as compatible for Stellaris 3.6 "Orion" - no script changes
 * 3.0.0 Add a compatibility trigger for other mods to check whether this one is active, remove old compatibility global flag
+* 3.0.1 Fix several events referring to the incorrect namespace
 
 ## Source Code
 
