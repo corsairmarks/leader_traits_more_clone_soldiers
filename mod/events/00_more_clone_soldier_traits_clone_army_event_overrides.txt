@@ -1,6 +1,6 @@
 namespace = clones
 
-# Modified: Invokes leader_traits_more_clone_soldier_traits.8 to adjust clone traits
+# Modified: Invokes more_clone_soldier_traits.8 to adjust clone traits
 # Clone Fertility reclaimed
 country_event = {
 	id = clones.22
@@ -85,7 +85,7 @@ country_event = {
 
 			# replace admiral-only loops with the "adjust all clone leaders" event
 			country_event = {
-				id = leader_traits_more_clone_soldier_traits.8
+				id = more_clone_soldier_traits.8
 			}
 
 			# Dismantle all Ancient Clone Vats
@@ -103,7 +103,7 @@ country_event = {
 	}
 }
 
-# Modified: Invokes leader_traits_more_clone_soldier_traits.8 to adjust clone traits
+# Modified: Invokes more_clone_soldier_traits.8 to adjust clone traits
 # Clone Potential
 country_event = {
 	id = clones.23
@@ -154,7 +154,7 @@ country_event = {
 			}
 			# replace admiral-only loops with the "adjust all clone leaders" event
 			country_event = {
-				id = leader_traits_more_clone_soldier_traits.8
+				id = more_clone_soldier_traits.8
 			}
 		}
 		set_country_flag = clone_army_full_potential
