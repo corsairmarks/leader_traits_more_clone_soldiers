@@ -55,9 +55,9 @@ leader_trait_clone_army = {
 	triggered_desc = {
 		exclusive_trigger = {
 			is_ruler = no
-			leader_class = leader_trait_clone_army_governor_desc
+			leader_class = governor
 		}
-		text = KEY
+		text = leader_trait_clone_army_governor_desc
 	}
 	triggered_desc = {
 		exclusive_trigger = {
@@ -88,6 +88,7 @@ leader_trait_clone_army = {
 	ai_categories = { survey }
 	initial = no
 	randomized = no
+	notify_on_gained = no
 }
 
 leader_trait_clone_army_fertile = {
@@ -147,9 +148,9 @@ leader_trait_clone_army_fertile = {
 	triggered_desc = {
 		exclusive_trigger = {
 			is_ruler = no
-			leader_class = leader_trait_clone_army_fertile_governor_desc
+			leader_class = governor
 		}
-		text = KEY
+		text = leader_trait_clone_army_fertile_governor_desc
 	}
 	triggered_desc = {
 		exclusive_trigger = {
@@ -180,6 +181,7 @@ leader_trait_clone_army_fertile = {
 	ai_categories = { survey }
 	initial = no
 	randomized = no
+	notify_on_gained = no
 }
 
 leader_trait_clone_army_full = {
@@ -238,9 +240,9 @@ leader_trait_clone_army_full = {
 	triggered_desc = {
 		exclusive_trigger = {
 			is_ruler = no
-			leader_class = leader_trait_clone_army_full_governor_desc
+			leader_class = governor
 		}
-		text = KEY
+		text = leader_trait_clone_army_full_governor_desc
 	}
 	triggered_desc = {
 		exclusive_trigger = {
@@ -271,4 +273,5 @@ leader_trait_clone_army_full = {
 	ai_categories = { survey }
 	initial = no
 	randomized = no
+	notify_on_gained = no
 }
