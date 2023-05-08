@@ -7,7 +7,7 @@ Adds twelve new traits for leaders from Clone Soldier species, one for each non-
 [h2]Compatibility[/h2]
 Preempts three of the built-in Origin: Clone Army events: [b]clones.22[/b], [b]clones.23[/b], and [b]clones.24[/b].  These events need to be replaced so that Clone Soldier traits can be up-/down-graded when completing the relevant special projects, therefor this mod will not work with other mods that also replace these events.
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.
+Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements.
 
 [h3]Not Included in "Subtle Polish"[/h3]
 This mod is intentionally not included in my modpack [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it is a considerable buff to leaders for empires with Origin: Clone Army.  It is otherwise fully compatible.
