@@ -1,44 +1,274 @@
-leader_trait_clone_army_ruler = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
-	modifier = {
+leader_trait_clone_army = {
+	is_councilor_trait_for_ruler = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_clone_soldier"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = governor
+		}
+		armies_cost_mult = -0.2
+		starbase_shipyard_build_cost_mult = -0.1
+		army_defense_health_mult = 0.2
+		army_defense_morale_mult = 0.2
+		army_defense_damage_mult = 0.2
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.25
+		ship_sensor_range_add = 1
+		shipclass_science_ship_disengage_mult = 0.25
+		category_military_theory_research_speed_mult = 0.05 # just for flavor
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		ship_fire_rate_mult = 0.25
+		ships_upkeep_mult = -0.1
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = general
+		}
+		army_morale = 0.1
+		army_disengage_chance_mult = 0.2
+		army_experience_gain_mult = 0.2
+	}
+	triggered_modifier = {
+		potential = { is_ruler = yes }
 		army_morale = 0.1
 		country_ship_upgrade_cost_mult = -0.1
 		country_naval_cap_mult = 0.1
 		ship_speed_mult = 0.1
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = leader_trait_clone_army_governor_desc
+		}
+		text = KEY
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		text = leader_trait_clone_army_scientist_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		text = leader_trait_clone_army_admiral_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		text = leader_trait_clone_army_general_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = { is_ruler = yes }
+		text = leader_trait_clone_army_ruler_desc
+	}
+	leader_class = { admiral governor scientist general }
+	ai_categories = { survey }
 	initial = no
 	randomized = no
 }
 
-leader_trait_clone_army_fertile_ruler = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
-	modifier = {
+leader_trait_clone_army_fertile = {
+	is_councilor_trait_for_ruler = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_clone_soldier_descendant"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		ship_fire_rate_mult = 0.15
+		ships_upkeep_mult = -0.05
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.15
+		ship_sensor_range_add = 1
+		shipclass_science_ship_disengage_mult = 0.15
+		category_military_theory_research_speed_mult = 0.025
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = general
+		}
+		army_morale = 0.05
+		army_disengage_chance_mult = 0.1
+		army_experience_gain_mult = 0.1
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = governor
+		}
+		armies_cost_mult = -0.1
+		starbase_shipyard_build_cost_mult = -0.05
+		army_defense_health_mult = 0.1
+		army_defense_morale_mult = 0.1
+		army_defense_damage_mult = 0.1
+	}
+	triggered_modifier = {
+		potential = { is_ruler = yes }
 		army_morale = 0.05
 		country_ship_upgrade_cost_mult = -0.05
 		country_naval_cap_mult = 0.05
 		ship_speed_mult = 0.05
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = leader_trait_clone_army_fertile_governor_desc
+		}
+		text = KEY
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		text = leader_trait_clone_army_fertile_scientist_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		text = leader_trait_clone_army_fertile_admiral_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		text = leader_trait_clone_army_fertile_general_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = { is_ruler = yes }
+		text = leader_trait_clone_army_fertile_ruler_desc
+	}
+	leader_class = { admiral governor scientist general }
+	ai_categories = { survey }
 	initial = no
 	randomized = no
 }
 
-leader_trait_clone_army_full_ruler = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_ascendant.dds"
-	modifier = {
+leader_trait_clone_army_full = {
+	is_councilor_trait_for_ruler = yes
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_clone_soldier_ascendant"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		ship_fire_rate_mult = 0.35
+		ships_upkeep_mult = -0.20
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.5
+		ship_sensor_range_add = 2
+		shipclass_science_ship_disengage_mult = 0.5
+		category_military_theory_research_speed_mult = 0.1
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = general
+		}
+		army_morale = 0.2
+		army_disengage_chance_mult = 0.4
+		army_experience_gain_mult = 0.4
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = governor
+		}
+		armies_cost_mult = -0.4
+		starbase_shipyard_build_cost_mult = -0.2
+		army_defense_health_mult = 0.4
+		army_defense_morale_mult = 0.4
+		army_defense_damage_mult = 0.4
+	}
+	triggered_modifier = {
 		army_morale = 0.2
 		country_ship_upgrade_cost_mult = -0.2
 		country_naval_cap_mult = 0.2
 		ship_speed_mult = 0.2
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = leader_trait_clone_army_full_governor_desc
+		}
+		text = KEY
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		text = leader_trait_clone_army_full_scientist_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		text = leader_trait_clone_army_full_admiral_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		text = leader_trait_clone_army_full_general_desc
+	}
+	triggered_desc = {
+		exclusive_trigger = { is_ruler = yes }
+		text = leader_trait_clone_army_full_ruler_desc
+	}
+	leader_class = { admiral governor scientist general }
+	ai_categories = { survey }
 	initial = no
 	randomized = no
 }
