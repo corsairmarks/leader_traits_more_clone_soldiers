@@ -13,6 +13,10 @@ Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements.
 This mod is intentionally not included in my modpack [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it is a considerable buff to leaders for empires with Origin: Clone Army.  It is otherwise fully compatible.
 
 [h2]Known Issues[/h2]
+[h3]Stellaris Bugs[/h3]
+Traits that are intended to function on regular leaders and also as Councilor traits for rulers are not able to be correctly added to rulers in Dictatorial, Imperial, or Gestalt empires.  This includes built-in traits like Psychic and Cyborg.  The bug affects this mod by preventing Dictatorial or Imperial Clone Soldier empires from having the Clone Soldier leader trait on their rulers.
+
+[h3]Error Logs[/h3]
 Preempting an event causes the game to log an error, so expect to see three error.log entries similar to these:
 [code]
 [00:15:19][eventmanager.cpp:368]: an event with id [clones.22] already exists!  file: events/clone_army_events.txt line: 441
