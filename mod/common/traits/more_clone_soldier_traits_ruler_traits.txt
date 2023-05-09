@@ -52,38 +52,6 @@ leader_trait_clone_army = {
 		country_naval_cap_mult = 0.1
 		ship_speed_mult = 0.1
 	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = governor
-		}
-		text = leader_trait_clone_army_governor_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = scientist
-		}
-		text = leader_trait_clone_army_scientist_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = admiral
-		}
-		text = leader_trait_clone_army_admiral_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = general
-		}
-		text = leader_trait_clone_army_general_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = { is_ruler = yes }
-		text = leader_trait_clone_army_ruler_desc
-	}
 	leader_class = { admiral governor scientist general }
 	ai_categories = { survey }
 	initial = no
@@ -145,38 +113,6 @@ leader_trait_clone_army_fertile = {
 		country_naval_cap_mult = 0.05
 		ship_speed_mult = 0.05
 	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = governor
-		}
-		text = leader_trait_clone_army_fertile_governor_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = scientist
-		}
-		text = leader_trait_clone_army_fertile_scientist_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = admiral
-		}
-		text = leader_trait_clone_army_fertile_admiral_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = general
-		}
-		text = leader_trait_clone_army_fertile_general_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = { is_ruler = yes }
-		text = leader_trait_clone_army_fertile_ruler_desc
-	}
 	leader_class = { admiral governor scientist general }
 	ai_categories = { survey }
 	initial = no
@@ -236,38 +172,6 @@ leader_trait_clone_army_full = {
 		country_ship_upgrade_cost_mult = -0.2
 		country_naval_cap_mult = 0.2
 		ship_speed_mult = 0.2
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = governor
-		}
-		text = leader_trait_clone_army_full_governor_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = scientist
-		}
-		text = leader_trait_clone_army_full_scientist_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = admiral
-		}
-		text = leader_trait_clone_army_full_admiral_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = {
-			is_ruler = no
-			leader_class = general
-		}
-		text = leader_trait_clone_army_full_general_desc
-	}
-	triggered_desc = {
-		exclusive_trigger = { is_ruler = yes }
-		text = leader_trait_clone_army_full_ruler_desc
 	}
 	leader_class = { admiral governor scientist general }
 	ai_categories = { survey }

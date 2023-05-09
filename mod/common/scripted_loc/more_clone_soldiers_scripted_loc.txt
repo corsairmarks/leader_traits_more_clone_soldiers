@@ -1,0 +1,113 @@
+# this = leader
+defined_text = {
+	name = GetCloneSoldierLeaderTraitDesc
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = governor
+		}
+		localization_key = leader_trait_clone_army_governor_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		localization_key = leader_trait_clone_army_scientist_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		localization_key = leader_trait_clone_army_admiral_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		localization_key = leader_trait_clone_army_general_desc_end
+	}
+	text = {
+		trigger = { is_ruler = yes }
+		localization_key = leader_trait_clone_army_ruler_desc_end
+	}
+	# doesn't handle envoys
+}
+
+# this = leader
+defined_text = {
+	name = GetCloneSoldierLeaderFullTraitDesc
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = governor
+		}
+		localization_key = leader_trait_clone_army_full_governor_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		localization_key = leader_trait_clone_army_full_scientist_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		localization_key = leader_trait_clone_army_full_admiral_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		localization_key = leader_trait_clone_army_full_general_desc_end
+	}
+	text = {
+		trigger = { is_ruler = yes }
+		localization_key = leader_trait_clone_army_full_ruler_desc_end
+	}
+	# doesn't handle envoys
+}
+
+# this = leader
+defined_text = {
+	name = GetCloneSoldierLeaderFertileTraitDesc
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = governor
+		}
+		localization_key = leader_trait_clone_army_fertile_governor_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		localization_key = leader_trait_clone_army_fertile_scientist_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = admiral
+		}
+		localization_key = leader_trait_clone_army_fertile_admiral_desc_end
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			leader_class = general
+		}
+		localization_key = leader_trait_clone_army_fertile_general_desc_end
+	}
+	text = {
+		trigger = { is_ruler = yes }
+		localization_key = leader_trait_clone_army_fertile_ruler_desc_end
+	}
+	# doesn't handle envoys
+}
