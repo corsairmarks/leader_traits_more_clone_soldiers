@@ -30,13 +30,14 @@ Preempting an event causes the game to log an error, so expect to see three erro
 
 * 1.0.0 Initial version
 * 2.0.0 Update for Stellaris version 3.4 "Cepheus" - use memory optimization feature for effects
-* 2.1.0 Mark as compatible for Stellaris version 3.6 "Orion" - no script changes
+* 2.1.0 Mark as compatible with Stellaris version 3.6 "Orion" - no script changes
 * 3.0.0 Add a compatibility trigger for other mods to check whether this one is active, remove old compatibility global flag
 * 3.0.1 Fix several events referring to the incorrect namespace
-* 3.1.0 Mark as compatible for Stellaris version 3.7 "Canis Minor" - no script changes
+* 3.1.0 Mark as compatible with Stellaris version 3.7 "Canis Minor" - no script changes
 * 4.0.0 Update for Stellaris version 3.8 "Gemini"
     * Combine each level of Clone Soldier leader class traits into one trigger-based trait per level, similar to the structure of `leader_trait_brainslug`
     * Update effect code to use condensed traits
+* 4.0.1 Do not notify when Clone Soldier traits are gained
 
 ## Source Code
 
