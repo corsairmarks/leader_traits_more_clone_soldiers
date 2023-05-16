@@ -18,12 +18,6 @@ This mod is intentionally not included in my modpack [Subtle Polish: A Collectio
 
 ## Known Issues
 
-### Stellaris Bugs
-
-Traits that are intended to function on regular leaders and also as Councilor traits for rulers are not able to be correctly added to rulers in Dictatorial, Imperial, or Gestalt empires.  This includes built-in traits like Psychic and Cyborg.  The bug affects this mod by preventing Dictatorial or Imperial Clone Soldier empires from having the Clone Soldier leader trait on their rulers.
-
-### Error Logs
-
 Preempting an event causes the game to log an error, so expect to see three error.log entries similar to these:
 
 ```
