@@ -3,7 +3,7 @@ add_leader_trait_clone_army = {
 	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_infertile } }
-		add_trait = leader_trait_clone_army
+		add_trait_no_notify = leader_trait_clone_army
 	}
 }
 
@@ -12,7 +12,7 @@ add_leader_trait_clone_army_full = {
 	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_infertile_full_potential } }
-		add_trait = leader_trait_clone_army_full
+		add_trait_no_notify = leader_trait_clone_army_full
 	}
 }
 
@@ -21,7 +21,7 @@ add_leader_trait_clone_army_fertile = {
 	optimize_memory
 	if = {
 		limit = { species = { has_trait = trait_clone_soldier_fertile } }
-		add_trait = leader_trait_clone_army_fertile
+		add_trait_no_notify = leader_trait_clone_army_fertile
 	}
 }
 
