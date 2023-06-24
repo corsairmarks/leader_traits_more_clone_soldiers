@@ -5,7 +5,7 @@ tags={
 	"Leaders"
 	"Species"
 }
-version="4.0.1"
+version="4.0.2"
 picture="thumbnail.png"
 supported_version="3.8.*"
 remote_file_id="2784215835"

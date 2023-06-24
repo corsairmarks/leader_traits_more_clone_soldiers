@@ -38,6 +38,7 @@ Preempting an event causes the game to log an error, so expect to see three erro
     * Combine each level of Clone Soldier leader class traits into one trigger-based trait per level, similar to the structure of `leader_trait_brainslug`
     * Update effect code to use condensed traits
 * 4.0.1 Do not notify when Clone Soldier traits are gained
+* 4.0.2 Remove an unnecessary ownership check (plus the leader is exiled and has no owner when combined with Leader Traits: All Eligible Species Traits)
 
 ## Source Code
 
